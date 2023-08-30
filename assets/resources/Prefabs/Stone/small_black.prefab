@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "mainarea",
+    "_name": "small_black",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -36,27 +36,27 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 601,
-      "height": 601
+      "width": 66,
+      "height": 65
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 1
+      "x": 0.5,
+      "y": 0.5
     },
     "_trs": {
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -451.033,
-        272.033,
+        0,
+        0,
         0,
         0,
         0,
         0,
         1,
-        1,
-        1,
+        0.5,
+        0.5,
         1
       ]
     },
@@ -74,47 +74,37 @@
     "_id": ""
   },
   {
-    "__type__": "cc296BtJaNJhYc5YUYCFnNq",
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "whiteStonePrefab": {
-      "__uuid__": "d6a478c9-8a6c-4cfc-b110-26c77bf423b7"
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "2e47dbff-207f-4576-8930-43b88583f4c7"
     },
-    "blackStonePrefab": {
-      "__uuid__": "ff15fede-b4c0-428f-9ed9-afc8a200efb3"
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
     },
-    "availPrefab": {
-      "__uuid__": "cc8cd2c8-e24f-4a83-84bf-532fcb4909fa"
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": {
+      "__uuid__": "e5969bb8-ec21-4d32-a2bd-1c50f94db52e"
     },
-    "redPointPrefab": {
-      "__uuid__": "249f650f-c90a-45b2-a877-654e8212e8f6"
-    },
-    "stone": {
-      "__uuid__": "f94dc1b9-319a-491c-8907-1daefec63590"
-    },
-    "smallWhiteDom": null,
-    "smallBlackDom": null,
-    "smallWhiteStone": {
-      "__uuid__": "020a5f92-71ae-4e35-ab5b-6b105ca0e4d3"
-    },
-    "smallBlackStone": {
-      "__uuid__": "164a7fd3-c30d-4f69-82ea-d1347567f6d6"
-    },
-    "_whiteStones": [],
-    "_blackStones": [],
-    "_x": 0,
-    "_y": 0,
-    "_boardPrev": [],
-    "_turn": 0,
-    "_res": false,
-    "_historyMode": false,
-    "_availAreas": [],
-    "_smallWhitePosition": null,
-    "_smallBlackPosition": null,
     "_id": ""
   },
   {

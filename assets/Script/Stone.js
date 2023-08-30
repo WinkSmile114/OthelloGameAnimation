@@ -98,9 +98,80 @@ cc.Class({
         // this.stopCountdown();
         setTimeout(()=>{
             this.progressSprite.node.active = false;
-        }, 500);
+            // this.createSmallStones(); // Call the function to create smaller stones
+        }, 500);    
     },
 
+    // flipStone() {
+    //     this.progressSprite.node.active = true;
+    //     cc.tween(this.progressSprite.node)
+    //       .to(0.5, { angle: -235 })
+    //       .start();
+      
+    //     if (this._isFront) {
+    //       this.backSprite.node.runAction(new cc.scaleTo(0.2, 0, 1));
+    //       this.frontSprite.node.runAction(new cc.scaleTo(0.2, 0, 1));
+    //       this.backSprite.node.runAction(
+    //         cc.sequence(
+    //           new cc.delayTime(0.2),
+    //           new cc.scaleTo(0.2, 1, 1)
+    //         )
+    //       );
+    //       this._isFront = false;
+    //     } else {
+    //       this.frontSprite.node.runAction(new cc.scaleTo(0.2, 0, 1));
+    //       this.backSprite.node.runAction(new cc.scaleTo(0.2, 0, 1));
+    //       this.frontSprite.node.runAction(
+    //         cc.sequence(
+    //           new cc.delayTime(0.2),
+    //           new cc.scaleTo(0.2, 1, 1)
+    //         )
+    //       );
+    //       this._isFront = true;
+    //     }
+      
+    //     setTimeout(() => {
+    //         this.progressSprite.node.active = false;
+    //         // const smallerStones = cc.instantiate(this.smallstonesPrefab);
+    //         // smallerStones.scale = 0.5; // Set the scale of smaller stones to 0.5
+    //         // const smallerStonesPosition = this.node.position.add(cc.v2(0, 50)); // Adjust the distance by modifying the y-coordinate (50 in this example)
+    //         // smallerStones.setPosition(smallerStonesPosition);
+    //         // this.node.addChild(smallerStones);
+          
+    //         // Check if the flipped stone is black or white
+    //         // if (this._isFront) {
+    //         //   // If the flipped stone is black, create smaller white stones on top of the overturned white stones
+    //         //   const smallerWhiteStones = cc.instantiate(this.frontSprite);
+    //         //   smallerWhiteStones.scale = 0.5; // Set the scale of smaller white stones to 0.5
+          
+    //         //   // Iterate through each child node of the current node
+    //         //   this.node.children.forEach((child) => {
+    //         //     const stoneComponent = child.getComponent(Stone);
+    //         //     if (stoneComponent && stoneComponent.isFront) {
+    //         //       // If the child node represents an overturned white stone, create a smaller white stone on top of it
+    //         //       const smallerStone = cc.instantiate(this.frontSprite);
+    //         //       smallerStone.setPosition(child.position);
+    //         //       child.addChild(smallerStone);
+    //         //     }
+    //         //   });
+    //         // } else {
+    //         //   // If the flipped stone is white, create smaller black stones on top of the overturned black stones
+    //         //   const smallerBlackStones = cc.instantiate(this.backSprite);
+    //         //   smallerBlackStones.scale = 0.5; // Set the scale of smaller black stones to 0.5
+          
+    //         //   // Iterate through each child node of the current node
+    //         //   this.node.children.forEach((child) => {
+    //         //     const stoneComponent = child.getComponent(Stone);
+    //         //     if (stoneComponent && !stoneComponent.isFront) {
+    //         //       // If the child node represents an overturned black stone, create a smaller black stone on top of it
+    //         //       const smallerStone = cc.instantiate(this.backSprite);
+    //         //       smallerStone.setPosition(child.position);
+    //         //       child.addChild(smallerStone);
+    //         //     }
+    //         //   });
+    //         // }
+    //       }, 500);
+    //   },
     onUserClick() {
     },
 

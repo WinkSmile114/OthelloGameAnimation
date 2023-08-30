@@ -105,9 +105,11 @@ cc.Class({
     },
 
     setScore: function (blackStoneNum, whiteStoneNum) {
-        this.blackScore.string = blackStoneNum;
-        this.whiteScore.string = whiteStoneNum;
-    },
+        setTimeout(() => {
+          this.blackScore.string = blackStoneNum;
+          this.whiteScore.string = whiteStoneNum;
+        }, 500); // Delay of 1000 milliseconds (1 second)
+      },
 
     // show end modal
     showEndModal: function (blackScore, whiteScore, missionScore) {

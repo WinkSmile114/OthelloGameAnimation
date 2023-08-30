@@ -1,4 +1,4 @@
-import { MESSAGE_TYPE, ROUNDS } from "../Common/Messages";
+    import { MESSAGE_TYPE, ROUNDS } from "../Common/Messages";
 import { ClientCommService } from "../ClientCommService";
 import { TIME_LIMIT, ALARM_LIMIT } from "../Common/Constants";
 
@@ -233,6 +233,7 @@ export const FakeServer = {
             );
         }
     },
+    
     // Calculation of stone number
     calcScore() {
         blackStoneNum = 0;
@@ -370,7 +371,7 @@ export const FakeServer = {
 
         // end of game
         var gameCheck = 0;
-        for (var x = 0; x < 8; x++) {
+        for (var x = 0; x < 8; x++) {    
             for (var y = 0; y < 8; y++) {
                 if (board[x][y] == 0) {
                     gameCheck = 1;
